@@ -1,8 +1,6 @@
 ---
 title: "México no muere de fiebre. Muere de sed."
 subtitle: "Un diagnóstico satelital del ecosistema mexicano · ODS 13 Acción por el Clima"
-author: "GreenByte"
-date: "2026-04-03"
 
 format:
   dashboard:
@@ -149,78 +147,51 @@ execute:
   message: false
 ---
 
-# Inicio {.unnumbered}
+# Inicio {orientation="rows"}
 
-![](hero.svg){width=100% fig-alt="Un Diagnóstico Forense del Ecosistema Mexicano 2019-2024"}
+<object data="hero.svg" type="image/svg+xml" width="100%" aria-label="Un Diagnóstico Forense del Ecosistema Mexicano" style="display: block; margin: -10px 0 15px 0;"></object>
 
-## Row {height="20%"}
+## Row
 
-### {width="50%"}
-![GreenByte ODS 13 Accion por el Clima Mexico](imagenes/modis_mexico_lrg.jpg){fig-align="center"}
+### Diagnóstico Forense Satelital {width="100%"}
 
-### {width="40%"} {height="20%"}
+::: {layout-ncol=2}
 
-::: {.card .gb-hero-card}
-::: {.gb-hero}
+::: {}
+**Un escáner profundo al territorio nacional.** No partimos de una hipótesis, elevamos un cuestionamiento al espacio; iniciamos un interrogatorio estadístico a miles de datos satelitales retrospectivos para descubrir exactamente **dónde, cómo y por qué** se está fracturando la resiliencia climática de México.
 
-::: gb-eyebrow
-MÓDULO DE INTELIGENCIA ECOSISTÉMICA V4.0
+Nuestra perspectiva es cruda pero necesaria: la mayoría de los proyectos climáticos nacen con una respuesta preconcebida y buscan datos que la validen. Nosotros dejamos que sean los datos los que nos cuenten la historia, sin sesgos.
+
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 1rem;">
+  <span style="background:#e8f5e9;color:#2e7d32;padding:6px 14px;border-radius:20px;font-weight:600;font-size:0.85em;border:1px solid #c8e6c9;">🌍 ODS 13: Acción Climática</span>
+  <span style="background:#e3f2fd;color:#1565c0;padding:6px 14px;border-radius:20px;font-weight:600;font-size:0.85em;border:1px solid #bbdefb;">📡 Detección Agnóstica</span>
+  <span style="background:#fff3e0;color:#ef6c00;padding:6px 14px;border-radius:20px;font-weight:600;font-size:0.85em;border:1px solid #ffe0b2;">📊 Análisis Multivariado</span>
+</div>
 :::
 
-::: gb-title
-MÉXICO <span class="gb-accent">GREENBYTE</span>
-:::
+![Espectropatía Atmosférica y Terrestre - México](imagenes/modis_mexico_lrg.jpg)
 
-::: gb-sub
-Un diagnóstico forense del territorio nacional. No partimos de una hipótesis, 
-partimos de un interrogatorio estadístico a miles de datos satelitales 
-para descubrir dónde y por qué se fractura la resiliencia climática de México.
-:::
-
-::: gb-pills
-::: {.gb-pill .gb-p-green}
-ODS 13: ACCIÓN CLIMÁTICA
-:::
-::: {.gb-pill .gb-p-blue}
-DETECCIÓN AGNÓSTICA DE SESGOS
-:::
-::: {.gb-pill .gb-p-amber}
-ANÁLISIS MULTIVARIADO
-:::
-:::
-
-:::
 :::
 
 
+## Row
 
+### 🔍 ¿Por qué GreenByte? La Necesidad de Evidencia {width="55%"}
 
-## {width="100%"}
+Hemos decidido que para tomar acción por el clima, primero debemos diagnosticar al ecosistema a nivel granular. El propósito de **GreenByte** es realizar un riguroso "pase de visita médico" ambiental; integrar científicamente lo que el territorio y el océano mexicano sufren cada hora, un diagnóstico que suele maquillarse cuando miramos simplemente los promedios nacionales.
 
-### Nuestra Perspectiva: El Rigor de la Pregunta Abierta
+Nos rehusamos a validar hipótesis prefabricadas. Interrogamos al país como si fuese una escena de crimen medioambiental. Cruzamos indicadores instrumentales sobre factores de contaminación (NO₂), asfixia foliar (NDVI) y estrés térmico-hídrico (LST y ERA5) para comprender sin sesgos **dónde y a qué velocidad** colapsa nuestra geografía física ante la presión antrópica.
 
-**¿Por qué GreenByte?** La mayoría de los proyectos climáticos nacen con una respuesta y buscan datos que la validen. Sin embargo, cuando se trata de tomar conciencia y accion por el clima, no podemos partir de una idea o hipotesis prefabricada, si no que debemos dejar que sean los mismos datos los que nos cuenten el malestar climatico del pais.
+<small>*Nota Metodológica: Pese a requerir homologar los satélites a una ventana temporal corta (2019-2024), la significancia de los resultados permite mapear claramente los focos de peligro ecosistémico para la toma de decisiones presupuestales de resiliencia.*</small>
 
-**La Motivación:** Nosotros hemos decidimos que para realmete tomar accion por el clima, antes debemos conocerlo, o bien, entender que personajes actuan en la historia. Por ello, el proposito de **GreenByte** es hacer un primer escaner del clima Mexicano, integrar y contar lo que el suelo de este país clama, pero muchas veces se ignora.
-
- Interrogamos al territorio como una escena del crimen ambiental. Cruzamos variables atmosféricas (NO₂), biológicas (NDVI) e hidrológicas (Precipitación) para entender no solo *si* el país cambia, sino *de qué forma* está fallando la respuesta natural ante el estrés.
-
-Este proyecto tiene naturalmete limitaciones, principalmente relacionadas a la baja cantidad de datos encontrados para este fin, y la estrecha ventana de tiempo que se analizo, sin embargo, el realto que nos cuentan estos datos es suficiente para discernir a grandes razgos como se comporta el clima de Mexico.
-
-
-### {width="40%"}
+### 🟢 ODS 13: Acción por el Clima {width="45%"}
 
 ::: {.callout-tip icon=false appearance="simple" .ods-13-card}
+El **Objetivo de Desarrollo Sostenible 13** de Naciones Unidas exige tomar medidas urgentes y transversales contra el cambio climático y todos sus devastadores impactos, exigiendo la adopción inmediata en la planeación nacional del país.
 
-🟢 ODS 13: Acción por el Clima
+Nuestra meta con **GreenByte** es entregar herramientas tecnológicas que sustenten **la inyección del rigor geoespacial en la política pública**, maximizando la eficiencia de fondos y programas de adaptación exactamente donde la ciencia detecta los focos de mayor sufrimiento.
 
-El **ODS 13** forma parte de la Agenda 2030 de la ONU para adoptar medidas urgentes contra el cambio climático y sus impactos. 
-
-Busca integrar medidas climáticas en políticas nacionales, mejorar la educación sobre el cambio climático y movilizar fondos para mitigar emisiones y aumentar la resiliencia ante desastres naturales.
-
-Lo que el **ODS 13** busca es adoptar medidas urgentes contra el cambio climático y sus impactos. Nuestra misión en **GreenByte** es dar un primer paso para **integrar el rigor científico en políticas nacionales**, aumentar la resiliencia y mitigar emisiones mediante evidencia reproducible, no solo promedios.
-
-Este objetivo es crucial para México debido a su alta vulnerabilidad a eventos climáticos, afectando sectores como la agricultura, la seguridad hídrica y la biodiversidad.
+La aplicación de estos hallazgos es de urgencia crítica para México. Entre cinturones de aridez extendiéndose y costas térmicamente alteradas, nuestra seguridad alimentaria, hídrica y de biodiversidad cuelgan de un hilo si no priorizamos recursos a las zonas heridas.
 :::
 
 
