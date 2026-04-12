@@ -153,46 +153,112 @@ execute:
 
 ## Row
 
-### Diagnóstico Forense Satelital {width="100%"}
+### Diagnóstico Forense Satelital {width="50%"}
 
-::: {layout-ncol=2}
+```{=html}
+<div style="padding:0 5%; display:flex; flex-direction:column; justify-content:center; height:100%; gap:1.25rem;">
 
-::: {}
-**Un escáner profundo al territorio nacional.** No partimos de una hipótesis, elevamos un cuestionamiento al espacio; iniciamos un interrogatorio estadístico a miles de datos satelitales retrospectivos para descubrir exactamente **dónde, cómo y por qué** se está fracturando la resiliencia climática de México.
+  <p style="font-size:1.05rem; line-height:1.7; margin:0;">
+    Un interrogatorio estadístico a <strong>millones de datos satelitales retrospectivos</strong>
+    para descubrir exactamente <strong>dónde, cómo y por qué</strong> se fractura la resiliencia
+    climática de México, sin hipótesis previas.
+  </p>
 
-Nuestra perspectiva es cruda pero necesaria: la mayoría de los proyectos climáticos nacen con una respuesta preconcebida y buscan datos que la validen. Nosotros dejamos que sean los datos los que nos cuenten la historia, sin sesgos.
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; align-items:stretch;">
+    <div style="background:#f0f9f4; border-left:4px solid #27AE60; border-radius:6px; padding:1rem 1rem 1.8rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+      <div style="font-size:2.6rem; font-weight:700; color:#1a6b3c; line-height:1;">23</div>
+      <div style="font-size:0.9rem; color:#555; text-transform:uppercase; letter-spacing:0.5px;">Variables satelitales</div>
+    </div>
+    <div style="background:#f0f6ff; border-left:4px solid #2980B9; border-radius:6px; padding:1rem 1rem 1.8rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+      <div style="font-size:2.6rem; font-weight:700; color:#1a5276; line-height:1;">10</div>
+      <div style="font-size:0.9rem; color:#555; text-transform:uppercase; letter-spacing:0.5px;">Años de cobertura</div>
+    </div>
+    <div style="background:#fef9f0; border-left:4px solid #E67E22; border-radius:6px; padding:1rem 1rem 1.8rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+      <div style="font-size:2.6rem; font-weight:700; color:#9C5A00; line-height:1;">16</div>
+      <div style="font-size:0.9rem; color:#555; text-transform:uppercase; letter-spacing:0.5px;">Hotspots críticos Gi*</div>
+    </div>
+    <div style="background:#fff0f0; border-left:4px solid #E74C3C; border-radius:6px; padding:1rem 1rem 1.8rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+      <div style="font-size:2.6rem; font-weight:700; color:#922B21; line-height:1;">120K</div>
+      <div style="font-size:0.9rem; color:#555; text-transform:uppercase; letter-spacing:0.5px;">Observaciones procesadas</div>
+    </div>
+  </div>
 
-<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 1rem;">
-  <span style="background:#e8f5e9;color:#2e7d32;padding:6px 14px;border-radius:20px;font-weight:600;font-size:0.85em;border:1px solid #c8e6c9;">🌍 ODS 13: Acción Climática</span>
-  <span style="background:#e3f2fd;color:#1565c0;padding:6px 14px;border-radius:20px;font-weight:600;font-size:0.85em;border:1px solid #bbdefb;">📡 Detección Agnóstica</span>
-  <span style="background:#fff3e0;color:#ef6c00;padding:6px 14px;border-radius:20px;font-weight:600;font-size:0.85em;border:1px solid #ffe0b2;">📊 Análisis Multivariado</span>
+  <div style="display:flex; gap:8px; flex-wrap:wrap;">
+    <span style="background:#e8f5e9;color:#2e7d32;padding:5px 12px;border-radius:20px;font-weight:600;font-size:0.82em;border:1px solid #c8e6c9;">🌍 ODS 13: Acción Climática</span>
+    <span style="background:#e3f2fd;color:#1565c0;padding:5px 12px;border-radius:20px;font-weight:600;font-size:0.82em;border:1px solid #bbdefb;">📡 Detección Agnóstica</span>
+    <span style="background:#fff3e0;color:#ef6c00;padding:5px 12px;border-radius:20px;font-weight:600;font-size:0.82em;border:1px solid #ffe0b2;">📊 Análisis Multivariado</span>
+  </div>
+
 </div>
+```
+
+### {width="50%"}
+::: {style="padding:0 5%;"}
+![](imagenes/modis_mexico_lrg.jpg){fig-alt="Imagen satelital MODIS de México" width="100%"}
 :::
-
-![Espectropatía Atmosférica y Terrestre - México](imagenes/modis_mexico_lrg.jpg)
-
-:::
-
-
 ## Row
 
-### 🔍 ¿Por qué GreenByte? La Necesidad de Evidencia {width="55%"}
+### {width="100%"}
 
-Hemos decidido que para tomar acción por el clima, primero debemos diagnosticar al ecosistema a nivel granular. El propósito de **GreenByte** es realizar un riguroso "pase de visita médico" ambiental; integrar científicamente lo que el territorio y el océano mexicano sufren cada hora, un diagnóstico que suele maquillarse cuando miramos simplemente los promedios nacionales.
+```{=html}
+<div style="width:85%; margin:0 auto; padding:0.5rem 0; display:flex; flex-direction:column; gap:2rem;">
 
-Nos rehusamos a validar hipótesis prefabricadas. Interrogamos al país como si fuese una escena de crimen medioambiental. Cruzamos indicadores instrumentales sobre factores de contaminación (NO₂), asfixia foliar (NDVI) y estrés térmico-hídrico (LST y ERA5) para comprender sin sesgos **dónde y a qué velocidad** colapsa nuestra geografía física ante la presión antrópica.
+  <!-- Cita hero -->
+  <div style="text-align:center; padding:1.5rem 2rem; background:linear-gradient(135deg,#f6fdf8 0%,#e8f5e9 100%); border-radius:12px; border:1px solid #c8e6c9;">
+    <p style="font-size:1.35rem; font-style:italic; color:#1a6b3c; line-height:1.6; margin:0;">
+      "Interrogamos al país como si fuese una escena de crimen medioambiental."
+    </p>
+  </div>
 
-<small>*Nota Metodológica: Pese a requerir homologar los satélites a una ventana temporal corta (2019-2024), la significancia de los resultados permite mapear claramente los focos de peligro ecosistémico para la toma de decisiones presupuestales de resiliencia.*</small>
+  <!-- ¿Por qué GreenByte? -->
+  <div>
+    <h3 style="margin:0 0 0.75rem; color:#1a5276; font-size:1.05rem; text-transform:uppercase; letter-spacing:0.8px;">🔍 ¿Por qué GreenByte?</h3>
+    <p style="margin:0 0 0.75rem; line-height:1.8; color:#333;">
+      Hemos decidido que para tomar acción por el clima, primero debemos diagnosticar al ecosistema a nivel granular. El propósito de <strong>GreenByte</strong> es realizar un riguroso "pase de visita médico" ambiental; integrar científicamente lo que el territorio y el océano mexicano sufren cada hora, un diagnóstico que suele maquillarse cuando miramos simplemente los promedios nacionales.
+    </p>
+    <p style="margin:0 0 1rem; line-height:1.8; color:#333;">
+      Nos rehusamos a validar hipótesis prefabricadas. Cruzamos indicadores instrumentales sobre factores de contaminación (NO₂), asfixia foliar (NDVI) y estrés térmico-hídrico (LST y ERA5) para comprender sin sesgos <strong>dónde y a qué velocidad</strong> colapsa nuestra geografía física ante la presión antrópica.
+    </p>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <span style="background:#eaf5ea; color:#1a6b3c; padding:4px 12px; border-radius:4px; font-size:0.82em; font-weight:600; border:1px solid #c8e6c9;">NO₂ Contaminación</span>
+      <span style="background:#eaf5ea; color:#1a6b3c; padding:4px 12px; border-radius:4px; font-size:0.82em; font-weight:600; border:1px solid #c8e6c9;">NDVI Asfixia Foliar</span>
+      <span style="background:#eaf5ea; color:#1a6b3c; padding:4px 12px; border-radius:4px; font-size:0.82em; font-weight:600; border:1px solid #c8e6c9;">LST Estrés Térmico</span>
+      <span style="background:#eaf5ea; color:#1a6b3c; padding:4px 12px; border-radius:4px; font-size:0.82em; font-weight:600; border:1px solid #c8e6c9;">ERA5 Anomalía Climática</span>
+    </div>
+  </div>
 
-### 🟢 ODS 13: Acción por el Clima {width="45%"}
+  <!-- Nota metodológica -->
+  <p style="margin:0; font-size:0.82em; color:#999; font-style:italic; line-height:1.6; border-top:1px solid #eee; padding-top:1rem;">
+    Nota Metodológica: Pese a requerir homologar los satélites a una ventana temporal corta (2019-2024), la significancia de los resultados permite mapear claramente los focos de peligro ecosistémico para la toma de decisiones presupuestales de resiliencia.
+  </p>
 
-::: {.callout-tip icon=false appearance="simple" .ods-13-card}
-El **Objetivo de Desarrollo Sostenible 13** de Naciones Unidas exige tomar medidas urgentes y transversales contra el cambio climático y todos sus devastadores impactos, exigiendo la adopción inmediata en la planeación nacional del país.
+  <!-- Divider ODS -->
+  <div style="border-top:2px solid #e0e0e0; position:relative; text-align:center; margin:0.5rem 0;">
+    <span style="background:#fff; padding:0 1rem; color:#888; font-size:0.82rem; text-transform:uppercase; letter-spacing:1px; position:relative; top:-0.7rem;">ODS 13 · Naciones Unidas · Agenda 2030</span>
+  </div>
 
-Nuestra meta con **GreenByte** es entregar herramientas tecnológicas que sustenten **la inyección del rigor geoespacial en la política pública**, maximizando la eficiencia de fondos y programas de adaptación exactamente donde la ciencia detecta los focos de mayor sufrimiento.
+  <!-- ODS 13 box -->
+  <div style="background:linear-gradient(135deg,#e8f5e9 0%,#f1f8e9 100%); border:1px solid #a5d6a7; border-radius:10px; padding:1.5rem 2rem;">
+    <p style="margin:0 0 0.75rem; line-height:1.8; color:#1b5e20; font-size:0.98rem;">
+      El <strong>Objetivo de Desarrollo Sostenible 13</strong> exige tomar medidas urgentes y transversales contra el cambio climático y todos sus devastadores impactos, exigiendo la adopción inmediata en la planeación nacional del país.
+    </p>
+    <p style="margin:0; line-height:1.8; color:#1b5e20; font-size:0.98rem;">
+      Nuestra meta con <strong>GreenByte</strong> es entregar herramientas tecnológicas que sustenten <strong>la inyección del rigor geoespacial en la política pública</strong>, maximizando la eficiencia de fondos y programas de adaptación exactamente donde la ciencia detecta los focos de mayor sufrimiento.
+    </p>
+  </div>
 
-La aplicación de estos hallazgos es de urgencia crítica para México. Entre cinturones de aridez extendiéndose y costas térmicamente alteradas, nuestra seguridad alimentaria, hídrica y de biodiversidad cuelgan de un hilo si no priorizamos recursos a las zonas heridas.
-:::
+  <!-- Alerta urgencia -->
+  <div style="background:#fff8e1; border-left:4px solid #F39C12; border-radius:0 8px 8px 0; padding:1rem 1.5rem;">
+    <p style="margin:0; font-size:0.95rem; color:#7d4e00; line-height:1.7;">
+      ⚠️ <strong>Urgencia para México:</strong> Entre cinturones de aridez extendiéndose y costas térmicamente alteradas, nuestra seguridad alimentaria, hídrica y de biodiversidad cuelgan de un hilo si no priorizamos recursos a las zonas heridas con evidencia científica.
+    </p>
+  </div>
+
+</div>
+```
+
+
+
 
 
 # Diagnóstico Nacional {orientation="columns"}
