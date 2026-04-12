@@ -26,3 +26,6 @@ Thumbs.db
 # Google Colab credentials
 token*.json
 credentials*.json
+
+# agent rules 
+*.agents
