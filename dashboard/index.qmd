@@ -181,7 +181,7 @@ La correlación de Spearman confirma que las variables de presión antropogénic
 
 **Visualización de Correlaciones**
 
-![Matriz de Correlación Espacial Masiva: Presión vs Respuesta](resultados/correlacion_masiva_v4_final.png){fig-align="center"}
+![Matriz de Correlación Espacial Masiva: Presión vs Respuesta](resultados/correlacion_masiva_v4_final.png){fig-align="center" width="70%"}
 
 ## Row {height=5%}
 
@@ -201,7 +201,7 @@ El ecosistema opera bajo un régimen de estrés donde el calor es el verdugo de 
 
 **Contribucion al ecosistema**
 
-![¿De que factor depende mas la degradacion del ecosistema? ](resultados/atribucion_dano_NDVI.png){fig-align="center"}
+![¿De que factor depende mas la degradacion del ecosistema? ](resultados/atribucion_dano_NDVI.png){fig-align="center" width="70%"}
 
 # Señal Climática
 
