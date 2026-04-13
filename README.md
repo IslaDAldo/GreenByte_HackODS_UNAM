@@ -71,13 +71,21 @@ Período completo: 2015–2024 | Ventana analítica armonizada: 2019–2024
 
 ## Estructura del repositorio
 
-```
-GreenByte_HackODS/
+```text
+GreenByte_HackODS_UNAM/
+├── .gitignore                 ← Ignora archivos innecesarios
+├── .python-version            ← Versión de Python fijada
+├── LICENSE                    ← CC BY-SA 4.0
 ├── README.md                  ← Este archivo
 ├── LICENSE                    ← CC BY-SA 4.0
 ├── ai-log.md                  ← Declaratoria de uso de IA (plantilla oficial HackODS)
+├── main.py                    ← Punto de entrada principal
+├── pyproject.toml             ← Configuración de dependencias (vía uv)
+├── uv.lock                    ← Versiones exactas y bloqueadas de las librerías
+├── dashboard/                 
+│   └── (tablero Quarto / visualizaciones finales)
 ├── datos/
-│   ├── datos_crudos/          ← CSVs exportados desde GEE (greenbyte_A/B1/B2/C_YYYY.csv)
+│   ├── datos_crudos/          ← .zip de GEE y CSVs exportados desde GEE (greenbyte_A/B1/B2/C_YYYY.csv)
 │   └── datos_procesados/      ← Dataset maestro consolidado y derivados
 │       ├── master_greenbyte_v4.csv
 │       ├── master_greenbyte_v4_2019_2024.csv
@@ -85,26 +93,59 @@ GreenByte_HackODS/
 │       ├── sst_descomposicion_enso.csv
 │       ├── tendencias_nacionales_v3.csv
 │       └── mann_kendall_tendencias_v3.csv
-├── scripts/
-│   ├── Extraccion_Variables_Ambientales_Mexico.ipynb  ← Extracción GEE v4
-│   └── Analisis_EDA.ipynb                             ← EDA v3
-└── dashboard/
-    └── (tablero Quarto / visualizaciones finales)
+├── notebook/                  ← Copias de respaldo o versiones anteriores de los notebooks
+└── scripts/
+    ├── Extraccion_Variables_Ambientales_Mexico.ipynb  ← Extracción GEE v4 principal
+    └── Analisis_EDA.ipynb                             ← Análisis principal EDA v3
 ```
 
 ---
 
 ## Cómo reproducir el pipeline
 
-### Requisitos
-- Cuenta de Google Earth Engine (proyecto: `greenbyte-hackods-unam-2026`)
-- Python 3.10+ con: `earthengine-api`, `geemap`, `pandas`, `numpy`, `matplotlib`, `statsmodels`, `scikit-learn`, `esda`, `libpysal`, `pymannkendall`, `seaborn`, `folium`
+### Requisitos y Configuración del Entorno Local
+
+1. **Dependencias y Entorno Virtual (`uv`)**:
+   Este proyecto utiliza [`uv`](https://docs.astral.sh/uv/) para gestionar dependencias de forma rápida y reproducible (fijadas de forma rígida en `uv.lock`). En la raíz del repositorio, ejecuta:
+   ```bash
+   uv sync
+   ```
+   Esto creará automáticamente el entorno virtual instalando: `esda`, `folium`, `ipykernel`, `jupyter`, `libpysal`, `matplotlib`, `numpy`, `pandas`, `plotly`, `pymannkendall`, `scikit-learn`, `scipy`, `seaborn` y `statsmodels`.
+
+2. **Variables de Entorno (`.env`)**:
+   Crea un archivo `.env` en la raíz (está ignorado por git de forma segura) para definir ahí credenciales externas que no deban exponerse.
+   ```bash
+   GEE_PROJECT="greenbyte-hackods-unam-2026"
+   ```
+
+3. **Cuenta de Google Earth Engine**:
+   Necesaria si vas a correr procesos de extracción de Google Earth Engine explícitamente desde los notebooks para actualizar la data cruda.
+
+### Consideraciones previas
+1. **Descomprimir Datos Crudos**: Para evitar la extracción pesada desde Earth Engine (que demora ~4 horas), dirígete a la carpeta `datos/datos_crudos/` y extrae el contenido del archivo `.zip` directamente.
+2. **Ajuste de Rutas en los Notebooks**: Los notebooks originales asumen rutas estáticas de Google Colab (`/content/drive/MyDrive/...`). **Antes de ejecutarlos localmente, deberás cambiar estas variables** a las rutas relativas `../datos/datos_crudos/` y `../datos/datos_procesados/` directamente ("hardcodeadas") en el código.
 
 ### Pasos
-1. Ejecutar `scripts/Extraccion_Variables_Ambientales_Mexico.ipynb` completo (lanza ~40 tareas en GEE, tiempo estimado ~4 horas en paralelo). Los CSVs exportados van a `datos/datos_crudos/`.
-2. Ejecutar la celda de consolidación para generar `master_greenbyte_v4.csv` en `datos/datos_procesados/`.
-3. Ejecutar `scripts/Analisis_EDA.ipynb` con la ventana 2019–2024 para el análisis principal.
-4. Las visualizaciones generadas van a `datos/datos_procesados/` y se integran al `dashboard/`.
+1. **[Opcional]** Ejecutar `scripts/Extraccion_Variables_Ambientales_Mexico.ipynb` completo para descargar desde cero los datos a `datos/datos_crudos/`.
+2. Ejecutar la celda de consolidación pertinente en las libretas para generar el dataset principal `master_greenbyte_v4.csv` y alojarlo centralizado en `datos/datos_procesados/`.
+3. Ejecutar `scripts/Analisis_EDA.ipynb` (asegurando el uso de rutas locales actualizadas) para la generación de gráficas estáticas.
+4. Las visualizaciones analíticas se colocarán en `datos/datos_procesados/` listas para enviarse al Dashboard.
+
+### Dashboard Interactivo (Quarto)
+El proyecto cuenta con un módulo de presentación de resultados impulsado por **Quarto Dashboards**, ubicado en la carpeta `dashboard/`. Mezcla análisis narrativo en Markdown con mapas funcionales gracias a la integración de JavaScript (Observable/Plotly/Leaflet).
+
+- **Cómo previsualizar visualmente el Dashboard**:
+  Si tienes [Quarto](https://quarto.org/docs/get-started/) instalado puedes lanzar el modo de desarrollo interactivo desde la terminal en la raíz del proyecto.
+  ```bash
+  quarto preview dashboard/index.qmd
+  ```
+  Esto levantará el panel en tu navegador. Los cambios se ven reflejados automaticamente.
+
+- **Compilar el resultado final**:
+  Una vez estés satisfecho, empaqueta el contenido a HTML usando:
+  ```bash
+  quarto render dashboard/index.qmd
+  ```
 
 ---
 
