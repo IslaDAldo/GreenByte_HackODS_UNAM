@@ -40,3 +40,8 @@ credentials*.json
 *.deb
 *.exe
 *.msi
+
+# Temporales de Quarto
+dashboard/index.quarto_ipynb*
+dashboard/index_files/
+
