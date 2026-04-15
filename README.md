@@ -144,26 +144,29 @@ Todos los datasets son de acceso público y gratuito, sin restricción de uso ac
 
 ```
 GreenByte_HackODS_UNAM/
-├── README.md                        ← Este archivo
-├── LICENSE                          ← CC BY-SA 4.0
-├── ai-log.md                        ← Declaratoria de uso de IA (plantilla oficial HackODS)
-├── datos/
-│   ├── README.md                    ← Descripción de variables y estructura de archivos
-│   ├── datos_crudos/                ← CSVs exportados desde GEE (greenbyte_A/B1/B2/C_YYYY.csv)
-│   └── datos_procesados/            ← Dataset maestro y derivados
-│       ├── master_greenbyte_v4.csv                ← Dataset completo 2015–2024
-│       ├── master_greenbyte_v4_2019_2024.csv      ← Ventana analítica armonizada
-│       ├── master_greenbyte_v4_hotspots.csv       ← Dataset con scores Gi* y flag hotspot
-│       ├── sst_descomposicion_enso.csv            ← SST observada + residual ENSO
-│       ├── tendencias_nacionales_v3.csv           ← Pendientes Mann-Kendall por variable
-│       └── mann_kendall_tendencias_v3.csv         ← Test completo (tau, p-value, Sen's slope)
+├── README.md                          ← Presentación del proyecto y narrativa
+├── LICENSE                            ← Licencia CC BY-SA 4.0
+├── ai-log.md                          ← Declaratoria de uso de IA (Obligatorio)
+├── .gitignore                         ← Archivos excluidos (imágenes pesadas/temporales)
+├── datos/                             ← (Se mantiene lo subido por tus compañeros)
+│   └── ... (archivos de defunciones DGIS y crudos)
 ├── scripts/
-│   ├── Extraccion_Variables_Ambientales_Mexico.ipynb  ← Pipeline de extracción GEE v4
-│   └── Analisis_EDA.ipynb                             ← Análisis, atribución y hotspots v3
+|   ├── Analisis_EDA.ipynb                              ← Pipeline de Analisis GEE
+│   ├── Extraccion_Variables_Ambientales_Mexico.ipynb   ← Pipeline de extracción GEE
+│   ├── GreenByte_Historia_Final.ipynb                  ← Análisis descriptivo y narrativa
+│   └── GreenByte_Construccion_de_la_Narrativa.ipynb    ← Procesamiento de hallazgos
 └── dashboard/
-    ├── index.qmd                    ← Tablero Quarto principal
-    ├── greenbyte.css                ← Estilos del tablero
-    └── imagenes/                    ← Recursos visuales del tablero
+    ├── index.html                     ← El tablero interactivo (Renderizado)
+    ├── index.qmd                      ← Código fuente del tablero en Quarto
+    └── resultados/                    ← Datos clave para las gráficas interactivos
+        ├── master_greenbyte_v4.csv    ← Dataset corazón del tablero
+        ├── df_anual.csv               ← Tendencias temporales
+        ├── escena_crimen.csv          ← Datos de atribución causal
+        ├── evidencia_agricultura.csv  ← Impacto en cultivos
+        ├── evidencia_salud.csv        ← Impacto en mortalidad/calor
+        ├── fuegos_latitud.csv         ← Distribución espacial de incendios
+        ├── mk_results.csv             ← Resultados estadísticos Mann-Kendall
+        └── sequia_estados.csv         ← Análisis regional de sequía
 ```
 
 ---
