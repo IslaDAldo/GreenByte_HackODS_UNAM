@@ -446,16 +446,6 @@ Este objetivo es crucial para México debido a su alta vulnerabilidad a eventos 
 
 Este proyecto tiene naturalmete limitaciones, principalmente relacionadas a la baja cantidad de datos encontrados para este fin, y la estrecha ventana de tiempo que se analizo, sin embargo, el realto que nos cuentan estos datos es suficiente para discernir a grandes razgos como se comporta el clima de Mexico.
 
-
-## {width="100%"}
-
-### {width="50%"}
-![GreenByte ODS 13 Accion por el Clima Mexico](imagenes/mx.jpg){fig-align="center"}
-
-### {width="50%"}
-![GreenByte ODS 13 Accion por el Clima Mexico](imagenes/Mex.jpg){fig-align="center"}
-
-
 # Escena del Crimen {.unnumbered}
 
 ```{python}
@@ -971,19 +961,6 @@ ax4.set_ylim(0, total_fire_yr.max() * 1.3)
 plt.tight_layout()
 plt.show()
 ```
-
-
-
-## Row {width="90%"}
-
-### {width="50%"}
-
-![**EVIDENCIA 01:** Análisis de estrés hídrico.](imagenes/muertos_ola_calor_mexico.jpg){.img-evidencia width="100%"}
-
-### {width="50%"}
-
-El detective experimentado sabe que cuando seis fuentes independientes apuntan en la misma dirección, no es una coincidencia. Es un patrón. Y los patrones tienen causas. Al observar las líneas de tendencia —esas cicatrices punteadas que atraviesan las gráficas— la sospecha se vuelve certeza: **el sistema está bajo ataque.** Pero un peritaje no termina en el hallazgo del cuerpo; apenas comienza ahí. Ahora debemos diseccionar el daño para entender el alcance real de la agresión.
-
 
 # Ruido Blanco
 
