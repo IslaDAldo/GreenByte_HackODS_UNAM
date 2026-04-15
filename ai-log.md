@@ -11,9 +11,9 @@
 ---
 
 ## Filosofía de uso
+En GreenByte decidimos utilizar la IA exclusivamente como un **acelerador de desarrollo técnico y asistente de depuración**. Delegamos en estas herramientas la generación de código mecánico (boilerplate para iteraciones y configuraciones de visualización) y la resolución de conflictos de dependencias o layout en Quarto. 
 
-Decidimos usar herramientas de IA exclusivamente para tareas de aceleración técnica: generación de código boilerplate, depuración de errores de GEE, y revisión crítica de narrativa. Todas las decisiones científicas —selección de variables, diseño del índice de multi-estrés, interpretación de hotspots, elección de ventana temporal armonizada 2019–2024 por la discontinuidad OMI→S5P— fueron tomadas y justificadas por el equipo.
-
+Sin embargo, el núcleo de nuestro proyecto se mantuvo estrictamente humano. La selección de las variables climáticas (SST, NDVI, EVI, anomalías de temperatura y precipitación), la estrategia de calcular deltas (Δ) interanuales para medir el impacto, y toda la narrativa explicativa que conecta los datos con los Objetivos de Desarrollo Sostenible fueron decisiones 100% analíticas tomadas por el equipo. La IA no pensó por nosotros, solo nos ayudó a teclear y renderizar más rápido.
 **Criterio de delegación:** Si la decisión requiere conocimiento del contexto climático mexicano o criterio analítico sobre los ODS, la tomamos nosotros. Si la tarea es mecánica o de sintaxis, la delegamos con revisión.
 
 ---
@@ -30,11 +30,6 @@ Decidimos usar herramientas de IA exclusivamente para tareas de aceleración té
 
 - Gemini 3.1 Pro (Asistente de programación y depuración de código)
 - GitHub Copilot (Autocompletado de sintaxis en el IDE)
-
-## Filosofía de uso
-En GreenByte decidimos utilizar la IA exclusivamente como un **acelerador de desarrollo técnico y asistente de depuración**. Delegamos en estas herramientas la generación de código mecánico (boilerplate para iteraciones y configuraciones de visualización) y la resolución de conflictos de dependencias o layout en Quarto. 
-
-Sin embargo, el núcleo de nuestro proyecto se mantuvo estrictamente humano. La selección de las variables climáticas (SST, NDVI, EVI, anomalías de temperatura y precipitación), la estrategia de calcular deltas (Δ) interanuales para medir el impacto, y toda la narrativa explicativa que conecta los datos con los Objetivos de Desarrollo Sostenible fueron decisiones 100% analíticas tomadas por el equipo. La IA no pensó por nosotros, solo nos ayudó a teclear y renderizar más rápido.
 
 ## Registro de uso
 
