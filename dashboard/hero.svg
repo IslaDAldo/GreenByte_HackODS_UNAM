@@ -99,9 +99,11 @@
   <text x="293" y="178" font-family="system-ui, sans-serif" font-size="14" fill="#5e8fb0">Un Diagnóstico Forense del</text>
   <text x="293" y="197" font-family="system-ui, sans-serif" font-size="14" fill="#5e8fb0">Ecosistema Mexicano 2019–2024</text>
 
-  <!-- Pill ODS 13 -->
-  <rect x="293" y="215" width="200" height="26" rx="13" fill="#071f14" stroke="#175236" stroke-width="0.5"/>
-  <text x="393" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#3dd68c">ODS 13 · Acción por el clima</text>
+  <!-- Pill ODS 13 (Interactiva) -->
+  <a href="https://www.un.org/sustainabledevelopment/es/climate-change-2/" target="_blank" style="cursor: pointer;">
+    <rect x="293" y="215" width="200" height="26" rx="13" fill="#071f14" stroke="#175236" stroke-width="0.5" />
+    <text x="393" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#3dd68c" style="pointer-events: none;">ODS 13 · Acción por el clima</text>
+  </a>
 
   <!-- Footer -->
   <text x="293" y="268" font-family="system-ui, sans-serif" font-size="12" fill="#233a50">Equipo GreenByte · Datos abiertos MX · Google Earth Engine</text>
