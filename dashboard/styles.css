@@ -1,0 +1,143 @@
+/* ══════════════════════════════════════════════════════════════
+   THRILLER CLIMÁTICO — CAPÍTULO I
+   Solo CSS: compatible con quarto render sin dependencias
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Sello de expediente ──────────────────────────────────── */
+.expediente-sello {
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  font-size: 0.72rem;
+  color: #888;
+  letter-spacing: 0.18em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.4rem 0 0.2rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Título del capítulo ──────────────────────────────────── */
+h1 {
+  font-family: 'Oswald', 'Segoe UI', sans-serif !important;
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 3px solid #9b2226;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Texto narrativo ──────────────────────────────────────── */
+p {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #2a2a2a;
+}
+
+/* Cita de víctima/caso */
+blockquote {
+  border-left: 4px solid #9b2226 !important;
+  background: #fdf6f0;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0 6px 6px 0;
+  font-style: normal !important;
+  margin: 1.5rem 0;
+}
+blockquote p {
+  font-family: 'Oswald', 'Segoe UI', sans-serif;
+  font-size: 1.0rem;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  margin: 0.2rem 0;
+}
+
+/* Texto en negrita color crimen */
+strong { color: #9b2226 !important; }
+
+/* ── Separadores como cinta policial ─────────────────────── */
+hr {
+  border: none;
+  border-top: 2px solid #f5c800;
+  margin: 1.8rem 0;
+  position: relative;
+}
+
+/* ── Callout: EVIDENCIA (important → borde rojo) ─────────── */
+.callout-important {
+  border-left: 5px solid #9b2226 !important;
+  background: #f5f0e8 !important;
+  border-radius: 4px;
+}
+.callout-important .callout-title {
+  font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+  font-size: 0.85rem !important;
+  font-weight: 700;
+  color: #9b2226 !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.callout-important .callout-body p {
+  font-size: 0.88rem;
+  color: #555;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── Callout: PISTAS verdes (tip) ─────────────────────────── */
+.callout-tip {
+  border-left: 4px solid #2d6a4f !important;
+  background: #f0faf4 !important;
+}
+.callout-tip .callout-title {
+  font-family: 'Oswald', 'Segoe UI', sans-serif !important;
+  font-size: 1.4rem !important;
+  color: #2d6a4f !important;
+  font-weight: 600;
+}
+.callout-tip strong { color: #2d6a4f !important; }
+.callout-tip em { color: #666; }
+
+/* ── Callout: PISTAS rojas (caution) ─────────────────────── */
+.callout-caution {
+  border-left: 4px solid #9b2226 !important;
+  background: #fdf2f2 !important;
+}
+.callout-caution .callout-title {
+  font-family: 'Oswald', 'Segoe UI', sans-serif !important;
+  font-size: 1.4rem !important;
+  color: #9b2226 !important;
+  font-weight: 600;
+}
+.callout-caution strong { color: #9b2226 !important; }
+.callout-caution em { color: #666; }
+
+/* ── Callout: SIGUIENTE CAPÍTULO (note) ───────────────────── */
+.callout-note {
+  border-left: 4px solid #1a5276 !important;
+  background: #f0f4fa !important;
+}
+.callout-note .callout-title {
+  font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+  font-size: 0.8rem !important;
+  color: #9b2226 !important;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.callout-note strong { color: #1a5276 !important; }
+
+/* ── Columnas de pistas: igualar altura ───────────────────── */
+.columns { align-items: stretch; gap: 0.8rem; }
+.column  { display: flex; flex-direction: column; }
+.column .callout { flex: 1; }
+
+/* ── Pie de figura ────────────────────────────────────────── */
+figcaption, .quarto-float-caption {
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  font-size: 0.74rem;
+  color: #888;
+  text-align: center;
+  margin-top: 0.4rem;
+}

@@ -11,6 +11,7 @@ dependencies = [
     "jupyter>=1.1.1",
     "libpysal>=4.14.1",
     "matplotlib>=3.10.8",
+    "nbclient>=0.10.4",
     "numpy>=2.4.4",
     "pandas>=3.0.2",
     "plotly>=6.6.0",
