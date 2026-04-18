@@ -148,7 +148,7 @@ GreenByte_HackODS_UNAM/
 ├── LICENSE                            ← Licencia CC BY-SA 4.0
 ├── ai-log.md                          ← Declaratoria de uso de IA (Obligatorio)
 ├── .gitignore                         ← Archivos excluidos (imágenes pesadas/temporales)
-├── datos/                             ← (Se mantiene lo subido por tus compañeros)
+├── datos/                            
 │   └── ... (archivos de defunciones DGIS y crudos)
 ├── scripts/
 |   ├── Analisis_EDA.ipynb                              ← Pipeline de Analisis GEE
